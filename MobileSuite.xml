@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mobile test Suite">
+    <test name="EN button verification">
+        <classes>
+    <class name="tests.nagarro.mobiletests.TC01_ENPageTest">
+        <methods><include name="enButtonVerify"/>
+        </methods>
+    </class>
+        </classes>
+    </test>
+    <test name = "File Logo Test">
+<!--        <parameter name="name" value="Monika"/>-->
+<!--        <parameter name="password" value="Guest@123"/>-->
+<!--        <parameter name="emailId" value="test@123"/>-->
+        <classes>
+            <class name="tests.nagarro.mobiletests.TC03_FileLogoTest">
+                <methods><include name="userRegPage"/></methods></class>
+        </classes>
+    </test>
+
+    <test name="Progress Bar Test">
+        <classes>
+            <class name="tests.nagarro.mobiletests.TC04_ProgressBarTest">
+                <methods><include name="verifyProgress"/></methods></class>
+        </classes>
+    </test>
+
+    <test name="HomePage Test">
+        <classes>
+            <class name="tests.nagarro.mobiletests.TC_05HomePageTest">
+                <methods>
+                    <include name="verifytoastisDisplayed"/>
+                    <include name="verifyPopupisDisplayed"/>
+                    <include name="verifyUnhandledException"/><include name="verifyUnhandledExceptionText"/>
+                </methods></class>
+        </classes>
+    </test>
+</suite>

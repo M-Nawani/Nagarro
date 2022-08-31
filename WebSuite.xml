@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web test Suite">
+    <test name="Verify Drag and Drop">
+        <classes>
+            <class name="tests.nagarro.webtests.TC01_DroppableTest">
+                <methods>
+                    <include name="verifyDragandDrop" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Verify Selectable items">
+        <classes>
+            <class name="tests.nagarro.webtests.TC02_SelectableTest">
+                <methods>
+                    <include name="verifyItemSelection" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify ControlGroup Page">
+        <classes>
+            <class name="tests.nagarro.webtests.TC03_ControlGroupTest">
+                <methods>
+                    <include name="verifyControlGroup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

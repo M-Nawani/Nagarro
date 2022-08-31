@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite">
+    <test name="Adding and Listing users">
+        <classes>
+            <class name="tests.nagarro.api.TC01_ApiTest">
+                <methods>
+                    <include name="getUsers"/>
+                    <include name="addNewUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
